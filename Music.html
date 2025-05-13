@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Link Between Music & Mental Health</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Chao Chieh Liu | Data Analyst Portfolio</a></h1>
+						<nav class="links">
+							<ul>
+							 <!--	<li><a href="#">Lorem</a></li>
+								<li><a href="#">Ipsum</a></li>
+								<li><a href="#">Feugiat</a></li>
+								<li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li> -->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="single.html">The Link Between Music & Mental Health</a></h2>
+										<p> ML | Python | Data Analyst | Visualization</p>
+									</div>
+									<div class="meta" >
+										<time class="published" datetime="2025-03-12">March 12, 2025</time>
+										<a href="#" class="author"><span class="name">Chao Chieh Liu</span><img src="images/zach_profile.png" alt=""  /></a>
+									</div>
+								</header>
+								<span class="image featured" style="text-align: center;"><img src="images/Music_1.png" alt="" /></span>
+								<p>In this project, we explored the intersection of music and mental health through a data-driven lens, aiming to understand how listening habits correlate with emotional well-being. Our research was guided by four central questions: Do different age groups exhibit unique music preferences? Can we predict levels of anxiety, depression, insomnia, or OCD based on a person's listening patterns? Does music itself have a measurable impact on mental health? And finally, can we recommend specific music genres that may help improve individual well-being? By tackling these questions, we set out to uncover actionable insights that connect music consumption with mental health indicators across diverse populations.</p>
+								<br>
+								<span class="image featured" style="text-align: center;"><img src="images/Music_2.png" alt="" /></span>
+								<p>Our analysis of genre preferences and listening frequency revealed clear generational patterns in music consumption. While genres like Rock and Pop were broadly favored across most age groups, younger listeners gravitated toward Rap, Lofi, Latin, and K-pop, whereas older listeners preferred Gospel and Classical. Interestingly, despite Rap and Lofi ranking low in stated genre preference, they appeared high on the “very frequently listened” list—suggesting these genres may serve functional purposes such as background music or mood regulation. Age also played a key role in genre alignment: Classical music consistently ranked in the top three for listeners aged 40 and above, highlighting a distinct divergence in taste compared to younger cohorts. These findings underscore the complex relationship between musical preference, usage context, and generational identity.</p>
+								<br>
+								<span class="image featured" style="text-align: center;"><img src="images/Music_3.png" alt="" /></span>
+								<p>To assess whether music listening habits could predict mental health levels, we built a classification model using features like BPM, listening hours per day, and genre frequency. Our best-performing model achieved an accuracy of 77.03% and a weighted F1 score of 0.6768, with video game music emerging as a key indicator. However, the model struggled with imbalanced classes and failed to generalize well to underrepresented groups. While certain genres such as R&B and Hip Hop showed stronger correlations with mental health scores, our findings suggest that context—like depression status and age—played a larger role than genre alone. Ultimately, the relationship between music and mental health appears to be highly subjective, influenced by external lifestyle factors not captured in the dataset. We recommend collecting more comprehensive data (e.g., stress levels, sleep quality), using verified sources, and experimenting with techniques like SMOTE to improve prediction for underrepresented mental health categories.</p>
+								<br>
+								<span class="image featured" style="text-align: center;"><img src="images/Music_4.png" alt="" /></span>
+								<p>To personalize music recommendations for mental health improvement, we applied K-Means clustering to group users who reported that music had “no effect” or even worsened their mental well-being. The goal was to identify clusters based on listening behavior and suggest genres that might better support emotional health. Using users’ listening patterns, we recommended the top three most-frequented genres within each cluster. We evaluated clustering quality using the Silhouette Score, which confirmed a clear separation between groups—indicating meaningful behavioral distinctions. This approach lays the groundwork for a behavior-based music recommendation system that could eventually support more adaptive and responsive mental wellness strategies.</p>
+								<br>
+								<span class="image featured" style="text-align: center;"><img src="images/Music_5.png" alt="" /></span>
+								<p>To enhance the quality of our genre-based recommendations, we applied Principal Component Analysis (PCA) to reduce dimensionality and noise in the dataset. We identified five key components—age, foreign language usage, music listening while working, hours of listening per day, and whether the music was composed—that together explained nearly 80% of the data variance. Post-PCA, the clustering performance improved significantly, with the silhouette score rising from 0.2 to 0.5, indicating clearer group separation. We then visualized the PCA-transformed clusters and conducted K-Means clustering across various group counts, determining that 39 clusters yielded the highest silhouette score. This refinement enabled more targeted and interpretable recommendations based on distinct user profiles, providing a strong foundation for personalized mental health-focused music suggestions.</p>
+								<br>
+								<span class="image featured" style="text-align: center;"><img src="images/Music_6.png" alt="" /></span>
+								<p>To translate our clustering results into actionable insights, we generated personalized genre recommendations for users who reported “no effect” or “worsened” mental health from their current listening habits. By analyzing the top genres within each individual’s cluster, we recommended three alternative genres aimed at improving their well-being. For example, James—whose favorite genre was video game music and reported negative effects—was recommended Rock, Classical, and Jazz. Similarly, users like Ethan and Lena, who experienced no impact from their current genres, received suggestions like Pop and Classical based on more uplifting listening patterns observed in similar clusters. This result showcases the potential of behavior-based music recommendations to enhance emotional outcomes through targeted, data-driven personalization.</p>
+						
+								<footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
